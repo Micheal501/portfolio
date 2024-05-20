@@ -14,7 +14,7 @@ const NavLink = () => {
       >
         <Avatar
           alt="Remy Sharp"
-          src="../../../public/logo.png"
+          src="../../../public/assets/img/logo.png"
           sx={{ width: 136, height: 136 }}
         />
         <Grid
