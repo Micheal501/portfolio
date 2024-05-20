@@ -64,7 +64,7 @@ const CardProjects = () => {
             <CardMedia
               component="img"
               height="270"
-              image="../../public/assets/img/portfolio-v1.png"
+              image="../../assets/img/portfolio-v1.png"
               alt="Portfolio website"
               sx={{ borderRadius: "10px" }}
             />
