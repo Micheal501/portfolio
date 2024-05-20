@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+
+
+*{
+  font-family: "RocknRoll One", sans-serif;
+}
+
+body{
+  background-color: #2e2e2e;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+}
+
+.icon-link .MuiSvgIcon-root {
+  transition: color 0.3s; 
+}
+
+.icon-link:hover .MuiSvgIcon-root {
+  color: #F46060;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(244, 96, 96, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(244, 96, 96, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(244, 96, 96, 0);
+  }
+}
+
+.icon-link:hover .MuiSvgIcon-root {
+  animation: pulse 1s infinite;
+}
