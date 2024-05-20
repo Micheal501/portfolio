@@ -28,11 +28,10 @@ const Hero = () => {
         </Grid>
         <Grid item>
           <h2 style={{ fontSize: "26px" }}>
-            Front End {""}
             <ReactTyped
-              strings={["Developer", "Engineer", "Enthusiats"]}
+              strings={["Front End Developer", " Software Developer"]}
               typeSpeed={40}
-              backSpeed={50}
+              backSpeed={40}
               loop
             />
           </h2>
