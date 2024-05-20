@@ -10,7 +10,7 @@ const NavLink = () => {
         direction="row"
         justifyContent="space-between"
         alignItems="center"
-        sx={{ padding: 5 }}
+        sx={{ paddingX: 5 }}
       >
         <Avatar
           alt="Remy Sharp"

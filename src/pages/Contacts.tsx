@@ -5,7 +5,7 @@ const Contacts = () => {
     <>
       <Container
         maxWidth="xl"
-        sx={{ marginTop: "100px" }}
+        sx={{ marginTop: "150px" }}
         id="contacts"
       >
         <Grid sx={{ padding: 5 }}>

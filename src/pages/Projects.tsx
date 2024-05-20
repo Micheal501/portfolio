@@ -8,33 +8,35 @@ export default function RecipeReviewCard() {
   const blockCard = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
-    <Container
-      maxWidth="xl"
-      sx={{ marginTop: "50px", padding: 5 }}
-      id="projects"
-    >
-      <h2
-        style={{
-          textAlign: "center",
-          color: "#F46060",
-          fontSize: "36px",
-          marginBottom: "50px",
-          fontWeight: "bold",
-        }}
+    <>
+      <Container
+        maxWidth="xl"
+        sx={{ marginTop: "50px", paddingTop: 20 }}
+        id="projects"
       >
-        Projects.
-      </h2>
-      <Grid
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          gap: 6,
-          flexDirection: blockCard ? "column" : "row",
-        }}
-      >
-        <CardProjects></CardProjects>
-      </Grid>
-    </Container>
+        <h2
+          style={{
+            textAlign: "center",
+            color: "#F46060",
+            fontSize: "36px",
+            marginBottom: "50px",
+            fontWeight: "bold",
+          }}
+        >
+          Projects.
+        </h2>
+        <Grid
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: 6,
+            flexDirection: blockCard ? "column" : "row",
+          }}
+        >
+          <CardProjects></CardProjects>
+        </Grid>
+      </Container>
+    </>
   );
 }

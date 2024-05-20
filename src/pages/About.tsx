@@ -6,8 +6,9 @@ const About = () => {
       <Container
         maxWidth="xl"
         id="about"
+        sx={{ marginTop: "150px", paddingTop: 10 }}
       >
-        <Grid sx={{ marginTop: "150px", padding: 5 }}>
+        <Grid sx={{ padding: 5 }}>
           <h2
             style={{
               textAlign: "center",
@@ -51,7 +52,10 @@ const About = () => {
               developer.
             </p>
           </Grid>
-          <Grid sx={{ marginTop: "30px" }}>
+          <Grid
+            item
+            sx={{ marginTop: "30px" }}
+          >
             <p style={{ color: "#FFFFFF", fontSize: "18px" }}>
               Some tools, technologies and frameworks I've worked with:
             </p>
