@@ -11,7 +11,7 @@ export default function RecipeReviewCard() {
     <>
       <Container
         maxWidth="xl"
-        sx={{ marginTop: "50px", paddingTop: 10 }}
+        sx={{ marginTop: "50px", paddingTop: 20 }}
         id="projects"
       >
         <h2
