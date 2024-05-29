@@ -13,7 +13,7 @@ const NavLink = () => {
         sx={{ paddingX: 5 }}
       >
         <Avatar
-          alt="Remy Sharp"
+          alt="Micheal Owen"
           src="../../assets/img/logo.png"
           sx={{ width: 136, height: 136 }}
         />
