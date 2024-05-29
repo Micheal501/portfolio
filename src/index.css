@@ -41,6 +41,12 @@ body{
   }
 }
 
+@media only screen and (max-width: 1000px) {
+  #contacts {
+    padding-top: 80px;
+  }
+}
+
 .icon-link:hover .MuiSvgIcon-root {
   animation: pulse 1s infinite;
 }
