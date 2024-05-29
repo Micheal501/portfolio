@@ -14,7 +14,7 @@ const CardProjects = () => {
       {TechStack.map((project, index) => (
         <Card
           key={index}
-          sx={{ width: 550, height: 580, bgcolor: "#524C4C" }}
+          sx={{ width: 570, height: 580, bgcolor: "#524C4C" }}
         >
           <div
             style={{
@@ -64,7 +64,7 @@ const CardProjects = () => {
             <CardMedia
               component="img"
               height="270"
-              image="../../assets/img/portfolio-v1.png"
+              image={project.image}
               alt="Portfolio website"
               sx={{ borderRadius: "10px" }}
             />
