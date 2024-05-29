@@ -1,5 +1,7 @@
 import { Container, Grid } from "@mui/material";
 import Button from "../components/atoms/ButtonLink";
+import "../index.css";
+
 const Contacts = () => {
   return (
     <>
