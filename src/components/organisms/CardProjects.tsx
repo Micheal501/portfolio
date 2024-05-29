@@ -10,7 +10,15 @@ import Typography from "@mui/material/Typography";
 
 const CardProjects = () => {
   return (
-    <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
+    <div
+      style={{
+        display: "flex",
+        gap: "20px",
+        flexWrap: "wrap",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
       {TechStack.map((project, index) => (
         <Card
           key={index}
