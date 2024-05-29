@@ -18,8 +18,8 @@ const MobileNavLink = () => {
     >
       <div>
         <Avatar
-          alt="Remy Sharp"
-          src="../../../public/logo.png"
+          alt="Micheal Owen"
+          src="../../../assets/img/logo.png"
           sx={{ width: 136, height: 136 }}
         />
       </div>
