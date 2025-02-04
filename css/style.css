@@ -1,0 +1,297 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    z-index: 1000;
+  }
+  
+  .menu-btn {
+    font-size: 24px;
+    cursor: pointer;
+    color: #e0e0e0;
+  }
+  
+  .menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #16213e;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu ul li {
+    margin: 10px 0;
+  }
+  
+  .menu ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+  }
+  
+  /* Parallax Background Effect */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+
+/* Add a subtle movement to the parallax effect */
+.hero {
+  perspective: 1px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.text-loop {
+  position: relative;
+  height: 40px; 
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-loop p {
+  margin: 0;
+  font-size: 1.5rem;
+  text-align: center;
+  white-space: nowrap;
+  position: absolute;
+  opacity: 0;
+  animation: textLoop 3s infinite; /* 3s total animation time for 3 paragraphs */
+}
+
+.text-loop p:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.text-loop p:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.text-loop p:nth-child(3) {
+  animation-delay: 2s;
+}
+
+@keyframes textLoop {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  33.33% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  43.33% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+  .explore-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #16213e;
+    color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .explore-btn:hover {
+    background-color: #e94560;
+    color: #fff;
+  }
+  
+  .about, .services, .opinions, .ask-doctor {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #16213e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .service-cards, .opinion-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .service-card, .opinion-card {
+    background-color: #16213e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    transition: transform 0.3s;
+  }
+  
+  .service-card:hover, .opinion-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .ask-doctor .whatsapp-style {
+    background-color: #16213e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .ask-doctor input {
+    width: 80%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .ask-doctor button {
+    padding: 10px 20px;
+    background-color: #e94560;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #16213e;
+  }
+  
+  footer .social-links a {
+    color: #e0e0e0;
+    margin: 0 10px;
+    font-size: 1.5rem;
+  }
+  
+  .theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #16213e;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    color: #e0e0e0;
+  }
+  
+  /* Dark Mode */
+  body.dark-mode {
+    background-color: #e0e0e0;
+    color: #1a1a2e;
+  }
+  
+  body.dark-mode .card, body.dark-mode .service-card, body.dark-mode .opinion-card, body.dark-mode .ask-doctor .whatsapp-style {
+    background-color: #fff;
+    color: #1a1a2e;
+  }
+  
+  body.dark-mode footer {
+    background-color: #fff;
+    color: #1a1a2e;
+  }
+  
+  body.dark-mode .theme-toggle {
+    background-color: #fff;
+    color: #1a1a2e;
+  }
+  .text-loop {
+    position: relative;
+    height: 40px; /* ارتفاع مناسب للنصوص */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .text-loop p {
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: center;
+    white-space: nowrap;
+    animation: textLoop 9s infinite;
+  }
+  
+  @keyframes textLoop {
+    0%, 33% {
+      transform: translateY(0);
+    }
+    34%, 66% {
+      transform: translateY(-100%);
+    }
+    67%, 99% {
+      transform: translateY(-200%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .waves {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    color: #e94560;
+  }
+    
