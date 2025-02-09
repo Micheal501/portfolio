@@ -7,6 +7,48 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .fa-bars {
+      color: rgb(22, 22, 95);
+    }
+
+    @media(max-width: 1024px){
+      .desktop-mode {
+        display: none;
+      }
+      .mobile-mode {
+        display: block;
+      }
+      .explore-btn{
+        top: 0;
+      }
+    }
+
+    @media(min-width: 1024px){
+      .desktop-mode {
+        display: block;
+      }
+      .mobile-mode {
+        display: none;
+      }
+    }
+  </style>
   
 </head>
 <body>
@@ -27,8 +69,17 @@
 
 <!-- Hero Section with Parallax Effect -->
 <section class="hero">
+  <video class="bg-video desktop-mode" autoplay loop muted>
+    <source src="images/desktop.mp4" type="video/mp4">
+    your browser doesn't support the video tag.
+  </video>
 
-  <h1>Micheal Nady</h1>
+  <video class="bg-video mobile-mode" autoplay loop muted>
+    <source src="images/mobile.mp4" type="video/mp4">
+    your browser doesn't support the video tag.
+  </video>
+
+  <!-- <h1>Micheal Nady</h1> -->
   <div class="text-loop">
     <p >Your Trusted Physiotherapy Doctor</p>
     <p >Expert in Sports Injury Rehabilitation</p>
