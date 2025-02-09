@@ -129,18 +129,20 @@ body {
   }
 }
   .explore-btn {
+    position: relative;
     padding: 10px 20px;
     font-size: 1rem;
     background-color: #16213e;
     color: #e0e0e0;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px 20px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
+    top: 50px;
   }
   
   .explore-btn:hover {
-    background-color: #e94560;
+    background-color: #0f0f0f;
     color: #fff;
   }
   
